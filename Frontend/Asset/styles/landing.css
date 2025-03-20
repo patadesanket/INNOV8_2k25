@@ -405,6 +405,15 @@
     margin-bottom: 20px;
   }
   
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
   .modal-content h2 {
     color: #2d6a4f;
     margin-bottom: 15px;
