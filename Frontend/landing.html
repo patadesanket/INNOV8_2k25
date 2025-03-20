@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AaushadiVan</title>
+    <link rel="stylesheet" href="landing.css">
+    <script src="landing.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">AaushadiVan</div>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Medicinal Plants</a></li>
+            <li><a href="#">Virtual Tour</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="nav-buttons" id="nav-buttons">
+            <button class="btn login-btn">Login</button>
+            <!-- <button class="btn signup-btn">Sign Up</button> -->
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover the Healing Power of Nature</h1>
+            <p>Explore our Virtual Herbal Garden and learn about the wonders of medicinal plants from around the world.
+            </p>
+            <button class="hero-btn">Explore Now</button>
+        </div>
+    </section>
+
+    <!-- Medicinal Plants Section -->
+    <section class="plants-section">
+        <div class="container">
+          <h2>Explore Medicinal Plants</h2>
+    
+          <!-- Search Box -->
+          <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for a plant...">
+          </div>
+    
+          <!-- Slider Row 1 - Left to Right -->
+          <div class="slider slider-left">
+            <div class="slider-track" id="sliderTrack1">
+              <div class="plant-card"><img src="/Frontend/Asset/tulsi-4850177_1920.jpg" alt="Tulsi"><p>Tulsi</p></div>
+              <div class="plant-card"><img src="/Frontend/Asset/plant-6544088_1920.jpg" alt="Aloe Vera"><p>Aloe Vera</p></div>
+              <div class="plant-card"><img src="/Frontend/Asset/Neem_1917057650 (3).jpg" alt="Neem"><p>Neem</p></div>
+              <div class="plant-card"><img src="/Frontend/Asset/mint-5229226_1920.jpg" alt="Mint"><p>Mint</p></div>
+              <div class="plant-card"><img src="/Frontend/Asset/turmeric-flower-3382348_1920.jpg" alt="Turmeric"><p>Turmeric</p></div>
+              <div class="plant-card"><img src="/Frontend/Asset/basil-1699002_1920.jpg" alt="Basil"><p>Basil</p></div>
+              
+            </div>
+          </div>
+    
+          <!-- Slider Row 2 - Right to Left -->
+          <div class="slider slider-right">
+            <div class="slider-track" id="sliderTrack2">
+              <div class="plant-card"><img src="/Frontend/Asset/lavenders-6482952_1920.jpg" alt="Lavender"><p>Lavender</p></div>
+              <div class="plant-card"><img src="/Frontend/Asset/ginger-7888804_1920.jpg" alt="Ginger"><p>Ginger</p></div>
+              <div class="plant-card"><img src="/Frontend/Asset/coriander-6476225_1920.jpg" alt="Coriander"><p>Coriander</p></div>
+              <div class="plant-card"><img src="/Frontend/Asset/lemon grass.jpg" alt="Lemon Grass"><p>Lemon Grass</p></div>
+              <div class="plant-card"><img src="/Frontend/Asset/rosemary-5259098_1920.jpg" alt="Rosemary"><p>Rosemary</p></div>
+              <div class="plant-card"><img src="/Frontend/Asset/thyme-1775656_1920.jpg" alt="Thyme"><p>Thyme</p></div>
+              
+            </div>
+          </div>
+    
+          <!-- Filtered Results Container -->
+          <div class="filtered-results" id="filteredResults"></div>
+        </div>
+      </section>
+
+      <!-- Modal for Tulsi -->
+<div id="tulsiModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeTulsiModal">&times;</span>
+      <img src="https://source.unsplash.com/300x200/?tulsi" alt="Tulsi">
+      <h2>Tulsi (Holy Basil)</h2>
+      <p><strong>Description:</strong> Tulsi is a sacred plant in India known for its medicinal properties.</p>
+      <p><strong>Used for Diseases:</strong> Cold, Cough, Fever, Respiratory Disorders</p>
+      <p><strong>Medicinal Usage:</strong> Boosts immunity, reduces stress, and acts as a natural detoxifier.</p>
+      <p><strong>Found Mostly:</strong> India, Nepal, Southeast Asia</p>
+    </div>
+  </div>
+  
+
+      <!-- Footer Section -->
+<footer class="footer-section">
+    <div class="footer-container">
+      <!-- About Card -->
+      <div class="footer-card about">
+        <h3>About Us</h3>
+        <p>We are passionate about medicinal plants and their natural healing properties. Explore various plants and learn about their benefits with us.</p>
+      </div>
+  
+      <!-- Contact Form -->
+      <div class="footer-card contact">
+        <h3>Contact Us</h3>
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+  
+      <!-- Team Members -->
+      <div class="footer-card team">
+        <h3>Our Team</h3>
+        <ul>
+          <li>Pranay Metkari</li>
+          <li>Dhananjay Chaudhari</li>
+          <li>Pranay Metkari</li>
+          <li>Sanket Patade</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="copyright">
+      © 2025 AaushadiVan. All rights reserved.
+    </div>
+  </footer>
+  
+
+ 
+    <!-- <script>
+        const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    const navButtons = document.getElementById('nav-buttons');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      navButtons.classList.toggle('active');
+    });
+
+        const searchInput = document.getElementById('searchInput');
+const plantCards = document.querySelectorAll('.plant-card');
+const sliderTracks = document.querySelectorAll('.slider-track'); // Both sliders
+const sliders = document.querySelectorAll('.slider');  // The entire slider divs
+const filteredResults = document.getElementById('filteredResults');
+
+searchInput.addEventListener('input', function () {
+  const searchValue = searchInput.value.toLowerCase().trim();
+  filteredResults.innerHTML = "";  // Clear previous results
+
+  if (searchValue === "") {
+    // Reset view
+    sliders.forEach(slider => slider.style.display = 'block'); // Show sliders
+    sliderTracks.forEach(track => track.classList.remove('paused'));
+    filteredResults.style.display = 'none'; // Hide filtered results
+  } else {
+    // Hide sliders and pause animation
+    sliders.forEach(slider => slider.style.display = 'none');
+    sliderTracks.forEach(track => track.classList.add('paused'));
+
+    // Filter matching plants
+    let matchFound = false;
+    plantCards.forEach(card => {
+      const plantName = card.querySelector('p').textContent.toLowerCase();
+      if (plantName.includes(searchValue)) {
+        matchFound = true;
+        const clone = card.cloneNode(true);
+        filteredResults.appendChild(clone);
+      }
+    });
+
+    // Show filtered results or 'No results' message
+    filteredResults.style.display = 'flex';
+    if (!matchFound) {
+      filteredResults.innerHTML = '<p>No results found</p>';
+    }
+  }
+});
+////////////////////////////////////////////
+
+
+// Tulsi Modal Logic
+const tulsiCard = document.querySelector('.plant-card img[alt="Tulsi"]').parentElement;
+const tulsiModal = document.getElementById('tulsiModal');
+const closeTulsiModal = document.getElementById('closeTulsiModal');
+
+tulsiCard.addEventListener('click', () => {
+  tulsiModal.style.display = 'block';
+});
+
+closeTulsiModal.addEventListener('click', () => {
+  tulsiModal.style.display = 'none';
+});
+
+// Close modal if user clicks outside the modal content
+window.addEventListener('click', (event) => {
+  if (event.target === tulsiModal) {
+    tulsiModal.style.display = 'none';
+  }
+});
+
+
+    </script> -->
+
+</body>
+
+</html>
+
