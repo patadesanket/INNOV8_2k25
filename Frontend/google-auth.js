@@ -22,7 +22,7 @@ googleBtn.addEventListener("click", () => {
             showToast(`Welcome ${user.displayName}`, true);
             console.log(user);
             setTimeout(() => {
-                window.location.href = "dashboard.html"; // Redirect after showing toast
+                window.location.href = "index.html"; // Redirect after showing toast
             }, 2000);
         })
         .catch((error) => {

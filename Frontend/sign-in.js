@@ -22,7 +22,7 @@ document.getElementById("signin-btn").addEventListener("click", function (event)
             showToast("Login successful!", "success");
             console.log("User:", userCredential.user);
             setTimeout(() => {
-                window.location.href = "dashboard.html";
+                window.location.href = "index.html";
             }, 1500); // Redirect after 1.5 seconds
         })
         .catch((error) => {

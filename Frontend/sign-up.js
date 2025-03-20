@@ -30,7 +30,7 @@ document.getElementById("signup-btn").addEventListener("click", function (event)
 
             
             setTimeout(() => {
-                window.location.href = "index.html"; 
+                window.location.href = "login.html"; 
             }, 2000);
         })
         .catch((error) => {
