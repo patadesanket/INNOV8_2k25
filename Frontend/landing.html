@@ -16,9 +16,9 @@
     <div class="logo">AaushadiVan</div>
     <ul class="nav-links" id="nav-links">
       <li><a href="#">Home</a></li>
-     
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#bottom">About</a></li>
+      <li><a href="#bottom">Contact</a></li>
+      
     </ul>
     <div class="nav-buttons" id="nav-buttons">
       <button class="btn login-btn" id="loginBtn" onclick="window.location.href='login.html';">Login</button>
@@ -42,11 +42,17 @@
  
 
   <!-- Footer -->
-  <footer class="footer-section">
+  <footer id="bottom" class="footer-section">
     <div class="footer-container">
       <div class="footer-card about">
         <h3>About Us</h3>
-        <p>We are passionate about medicinal plants and their natural healing properties.</p>
+        <p>Welcome to AaushadiVan, where we are passionate about to aware people about use of medicinal plants for better life. Our goal is to provide valuable insights, resources, and solutions to help our users make informed decisions.
+
+          At AaushadiVan, we believe in innovation, quality, and user satisfaction. Whether you are here to explore new ideas, find helpful information, or engage with our community, we are dedicated to making your experience seamless and enriching.
+          
+          Join us on this journey as we continue to grow and bring you the best content, tools, and services. If you have any questions or suggestions, feel free to reach out through our Contact page.
+          
+          Let me know if you need modifications to match your website’s theme! </p>
       </div>
       <div class="footer-card contact">
         <h3>Contact Us</h3>
@@ -71,6 +77,16 @@
       © 2025 AaushadiVan. All rights reserved.
     </div>
   </footer>
+
+
+  <script>
+    document.querySelectorAll('a[href="#bottom"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('#bottom').scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
 
 </body>
 
